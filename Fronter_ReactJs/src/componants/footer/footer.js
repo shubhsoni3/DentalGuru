@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="col-12">
             <div className="footer-py-60 footer-border">
               <div className="row">
-                <div className="col-lg-6 col-md-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <div className="col-lg-4 col-md-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                   <Link to="#" className="logo-footer">
                     {/* <img src={logolight} alt="" /> */}
                     <h3 className="text-light">Dental Guru</h3>
@@ -144,8 +144,8 @@ export default function Footer() {
                     </li>
                   </ul>
                 </div>
-
-                <div className="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-3  col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                   <h5 className="footer-head">Usefull Links</h5>
                   <ul className="list-unstyled footer-list mt-4">
                     <li>
@@ -170,6 +170,18 @@ export default function Footer() {
                       <Link to="#" className="text-foot">
                         <MdOutlineKeyboardArrowRight className="me-1" />
                         Demo
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Privacy" className="text-foot">
+                        <MdOutlineKeyboardArrowRight className="me-1" />
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Refund" className="text-foot">
+                        <MdOutlineKeyboardArrowRight className="me-1" />
+                        Refund & Cancellation Policy
                       </Link>
                     </li>
                   </ul>

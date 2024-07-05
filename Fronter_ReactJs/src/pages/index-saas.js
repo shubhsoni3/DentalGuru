@@ -127,7 +127,7 @@ export default function IndexSaas() {
     },
     {
       price: "50000/-",
-      title: "LIFETIME",
+      title: "5 Year",
       subTitle: [
         "Annual Maintenance Charge ₹2400/-",
         // "Number of People 1 Person",
@@ -457,13 +457,13 @@ export default function IndexSaas() {
                     <span className="text-primary h5 me-2">
                       <AiOutlineCheckCircle className="align-middle" />
                     </span>
-                    BLOOD TEST
+                    PATHOLOGY TEST
                   </li>
                   <li className="mb-1">
                     <span className="text-primary h5 me-2">
                       <AiOutlineCheckCircle className="align-middle" />
                     </span>
-                    RADIOLOGY
+                    RADIOLOGY TEST
                   </li>
                 </ul>
                 {/* <div className="mt-4">
@@ -616,7 +616,7 @@ export default function IndexSaas() {
           </div>
         </div>
 
-        <div className="container mt-100 mt-60">
+        <div className="container mt-100 mt-60 mb-5">
           <div className="row justify-content-center">
             <div className="col-12">
               <div className="section-title mb-4 pb-2 text-center">
@@ -704,21 +704,4 @@ export default function IndexSaas() {
       <ScrollTop />
     </>
   );
-}
-
-{
-  /* {activeIndex === item.id ? (
-                        <div
-                          id="collapseOne"
-                          className="accordion-collapse border-0 collapse show"
-                        >
-                          <div className="accordion-body text-muted bg-white">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
-                            in some form.
-                          </div>
-                        </div>
-                      ) : (
-                        ""
-                      )} */
 }

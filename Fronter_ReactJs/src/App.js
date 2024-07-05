@@ -77,6 +77,8 @@ import Maintenance from "./pages/page-maintenance";
 import Error from "./pages/page-error";
 import ContactOne from "./pages/page-contact-one";
 import ContactTwo from "./pages/page-contact-two";
+import Refund from "./componants/footer/Refund.jsx";
+import Privacy from "./componants/footer/Privacy.jsx";
 
 function App() {
   // useEffect(() => {
@@ -162,6 +164,8 @@ function App() {
         <Route path="/page-error" element={<Error />} />
         <Route path="*" element={<Error />} />
         <Route path="/page-contact-one" element={<ContactOne />} />
+        <Route path="/Refund" element={<Refund />} />
+        <Route path="/Privacy" element={<Privacy />} />
         {/* <Route path="/page-contact-two" element={<ContactTwo />} /> */}
       </Routes>
     </>
