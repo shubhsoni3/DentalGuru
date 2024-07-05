@@ -44,7 +44,7 @@ export default function SaasNavbar() {
         <div className="container">
           <Link className="logo" to="/">
             <span className="logo-light-mode">
-              <h3>Dental Guru</h3>
+              <h3 style={{color:"#E12454"}}>DentalGuru</h3>
             </span>
             {/* <span className="logo-light-mode">
               <img src={logoDark} className="l-dark" alt="" />

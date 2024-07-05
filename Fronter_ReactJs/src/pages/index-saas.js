@@ -13,8 +13,6 @@ import Lab from "../assets/images/app/Lab.png";
 import faqs from "../assets/images/faqs.png";
 
 import SaasNavbar from "../componants/navbar/saasNavbar";
-import Partners from "../componants/partners";
-import ClientsTwo from "../componants/clientsTwo";
 import Footer from "../componants/footer/footer";
 import ScrollTop from "../componants/scrollTop";
 
@@ -34,6 +32,7 @@ import {
 } from "../assets/icons/vander";
 
 import { accordionData2 } from "../data/data";
+import styled from "styled-components";
 
 export default function IndexSaas() {
   const [isOpen, setOpen] = useState(false);
@@ -77,12 +76,7 @@ export default function IndexSaas() {
       price: "12,000/-",
       title: "YEARLY PLAN",
       subTitle: [
-        "Including 8 Month Maintence",
-        // "Number of People 1 Person",
-        // "Unlimited Projects",
-        // "Club Access Unlimited Access",
-        // "Class Access Fitness Classes",
-        // "Enhanced Security",
+        "Including 1 Year Maintenance",
       ],
       status: false,
     },
@@ -90,12 +84,7 @@ export default function IndexSaas() {
       price: "7,200/-",
       title: "HALF YEARLY",
       subTitle: [
-        "Including 3 Month Maintence",
-        // "Number of People 5 Person",
-        // "Unlimited Projects",
-        // "Club Access Unlimited Access",
-        // "Class Access Fitness Classes",
-        // "Enhanced Security",
+        "Including 6 Month Maintenance",
       ],
       status: true,
     },
@@ -103,12 +92,7 @@ export default function IndexSaas() {
       price: "4,500/-",
       title: "QUATERLY",
       subTitle: [
-        "Including 1 Month Maintence",
-        // "Number of People 10 Person",
-        // "Unlimited Projects",
-        // "Club Access Unlimited Access",
-        // "Class Access Fitness Classes",
-        // "Enhanced Security",
+        "Including 3 Month Maintenance",
       ],
       status: false,
     },
@@ -116,32 +100,26 @@ export default function IndexSaas() {
       price: "2,000/-",
       title: "MONTHLY",
       subTitle: [
-        "Including 1 Month Maintence",
-        // "Number of People 1 Person",
-        // "Unlimited Projects",
-        // "Club Access Unlimited Access",
-        // "Class Access Fitness Classes",
-        // "Enhanced Security",
+        "Including 1 Month Maintenance",
       ],
       status: false,
     },
     {
       price: "50000/-",
-      title: "5 Year",
+      title: "For 5 Years",
       subTitle: [
-        "Annual Maintenance Charge ₹2400/-",
-        // "Number of People 1 Person",
-        // "Unlimited Projects",
-        // "Club Access Unlimited Access",
-        // "Class Access Fitness Classes",
-        // "Enhanced Security",
+        "Annual Maintenance Charge 0/-",
       ],
       status: false,
     },
   ];
+
+
   return (
     <>
+    <Container>
       <SaasNavbar />
+
       <section
         className="bg-home bg-primary d-flex align-items-center"
         id="home"
@@ -155,11 +133,6 @@ export default function IndexSaas() {
                   Enhance Your Dental Practice with Our Comprehensive Software
                   Solution
                 </h1>
-                {/* <p className="para-desc mx-auto text-white-50">
-                  Launch your campaign and benefit from our expertise on
-                  designing and managing conversion centered bootstrap html
-                  page.
-                </p> */}
 
                 <Link
                   to="#!"
@@ -203,17 +176,6 @@ export default function IndexSaas() {
 
       <section className="section mt-0 mt-md-5 overflow-hidden" id="features">
         <div className="container">
-          {/* <div className="row justify-content-center">
-            <div className="col-12 text-center">
-              <div className="section-title mb-4 pb-2">
-                <h4 className="title mb-4">Our solution for your business</h4>
-                <p className="text-muted para-desc mx-auto mb-0">
-                  Start working with Fronter that can provide everything you
-                  need to generate awareness, drive traffic, connect.
-                </p>
-              </div>
-            </div>
-          </div> */}
 
           <div className="row">
             {featureData.map((item, index) => {
@@ -235,6 +197,7 @@ export default function IndexSaas() {
           </div>
         </div>
 
+     {/* Start Super Admin Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-5">
@@ -264,36 +227,18 @@ export default function IndexSaas() {
                   adaptability in every function and fostering growth in
                   services."
                 </p>
-                {/* <ul className="list-unstyled text-muted">
-                  <li className="mb-1">
-                    <span className="text-primary h5 me-2">
-                      <AiOutlineCheckCircle className="align-middle" />
-                    </span>
-                    Digital Marketing Solutions for Tomorrow
-                  </li>
-                  <li className="mb-1">
-                    <span className="text-primary h5 me-2">
-                      <AiOutlineCheckCircle className="align-middle" />
-                    </span>
-                    Our Talented & Experienced Marketing Agency
-                  </li>
-                  <li className="mb-1">
-                    <span className="text-primary h5 me-2">
-                      <AiOutlineCheckCircle className="align-middle" />
-                    </span>
-                    Create your own skin to match your brand
-                  </li>
-                </ul>
-                <div className="mt-4">
-                  <Link to="#" className="mt-3 h6 text-primary">
-                    Find Out More <MdKeyboardArrowRight />
+                <div className="mt-4 ">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect" >
+                    Learn More <MdKeyboardArrowRight />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
+    {/* End Of Super Admin  Section*/}
 
+ {/* Start Admin Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -310,7 +255,7 @@ export default function IndexSaas() {
                   configuration.
                 </p>
                 <div className="mt-4">
-                  <Link to="#" className="btn btn-primary">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect">
                     Learn More <MdKeyboardArrowRight />
                   </Link>
                 </div>
@@ -326,7 +271,9 @@ export default function IndexSaas() {
             </div>
           </div>
         </div>
+        {/* End Of Admin  Section*/}
 
+        {/* Start Resepnist Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-5">
@@ -375,16 +322,18 @@ export default function IndexSaas() {
                     Manage Inquiries
                   </li>
                 </ul>
-                {/* <div className="mt-4">
-                  <Link to="#" className="mt-3 h6 text-primary">
-                    Find Out More <MdKeyboardArrowRight />
+                <div className="mt-4">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect">
+                    Learn More <MdKeyboardArrowRight />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {/* End Of Resepnist  Section*/}
 
+        {/* Start Doctor Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -403,11 +352,11 @@ export default function IndexSaas() {
                   medications and providing detailed treatment plans. Elevate
                   patient care with our all-inclusive dental solution."
                 </p>
-                {/* <div className="mt-4">
-                  <Link to="#" className="btn btn-primary">
+                <div className="mt-4">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect">
                     Learn More <MdKeyboardArrowRight />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -420,7 +369,9 @@ export default function IndexSaas() {
             </div>
           </div>
         </div>
+{/* End Of Doctor Section*/}
 
+{/* Start Lab Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-5">
@@ -466,16 +417,18 @@ export default function IndexSaas() {
                     RADIOLOGY TEST
                   </li>
                 </ul>
-                {/* <div className="mt-4">
-                  <Link to="#" className="mt-3 h6 text-primary">
-                    Find Out More <MdKeyboardArrowRight />
+                <div className="mt-4">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect">
+                    Learn More <MdKeyboardArrowRight />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
+{/* End Of Lab Section*/}
 
+{/* Start Accountend Section */}
         <div className="container mt-100 mt-60">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-7 order-2 order-md-1 mt-5 mt-sm-0">
@@ -495,11 +448,11 @@ export default function IndexSaas() {
                   Experience the difference with our all-in-one solution,
                   tailored to elevate your practice to new heights."
                 </p>
-                {/* <div className="mt-4">
-                  <Link to="#" className="btn btn-primary">
+                <div className="mt-4">
+                  <Link to="/page-contact-one" className="btn btn-primary shimmer-effect">
                     Learn More <MdKeyboardArrowRight />
                   </Link>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -512,52 +465,9 @@ export default function IndexSaas() {
             </div>
           </div>
         </div>
+{/* End Of Accountend Section*/}
 
-        {/* <<< This section is open when we have more client >>> */}
-        {/* <div className="container mt-100 mt-60">
-          <div className="row justify-content-center">
-            <div className="col-12 text-center">
-              <div className="section-title mb-4 pb-2">
-                <h4 className="title mb-4">
-                  More than 1K+ users are use DENTALGURU
-                </h4>
-                <p className="text-muted para-desc mx-auto mb-0">
-                  Start practicing with our comprehensive dental software
-                  solution that provides everything you need to generate
-                  awareness, drive traffic, and connect.
-                </p>
-              </div>
-            </div>
-          </div>
-          <Partners />
-        </div> */}
       </section>
-
-      {/* <<< This section is open when we have testimonial >>> */}
-      {/* <section className="section bg-primary" id="testi">
-        <div className="container mb-4">
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <div className="section-title text-center mb-4 pb-2">
-                <h4 className="title text-white title-dark mb-4">
-                  What our users says !
-                </h4>
-                <p className="text-white-50 para-desc mx-auto mb-0">
-                  Start working with Fronter that can provide everything you
-                  need to generate awareness, drive traffic, connect.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <<<this also when we have client review >>> */}
-      {/* <section className="section pb-0">  
-        <div className="container">
-          <ClientsTwo />
-        </div>
-      </section> */}
 
       <section className="" id="pricing">
         <div className="container">
@@ -678,30 +588,27 @@ export default function IndexSaas() {
           </div>
         </div>
       </section>
-      {/* <section className="section">
-            <div className="bg-overlay bg-gradient-primary"></div>
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-12">
-                        <div className="section-title text-center">
-                            <h4 className="title text-white title-dark mb-3">Get your free quote today?</h4>
-                            <p className="para-desc mx-auto text-white-50">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
-
-                            <div className="subcribe-form mt-5">
-                                <form>
-                                    <div className="mb-3">
-                                        <input type="email" id="email" className="bg-white rounded-lg opacity-5" required placeholder="Type your mail id..."/>
-                                        <button type="submit" className="btn btn-pills btn-primary">Get Started</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
+      
       <Footer />
       <ScrollTop />
+      </Container>
     </>
   );
 }
+
+const Container = styled.div`
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer-effect {
+  animation: shimmer 8s linear infinite;
+  background: linear-gradient(to right, #2a52c3 0%, #6a89cc 20%, #2a52c3 40%, #2a52c3 100%);
+  background-size: 200% 100%;
+}
+`;
