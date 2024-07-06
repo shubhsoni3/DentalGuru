@@ -18,6 +18,8 @@ import ScrollTop from "../componants/scrollTop";
 
 import ModalVideo from "react-modal-video";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
+import Whatsup from "../componants/Whatsup"
+import Call from "../componants/Call"
 
 import {
   BiWater,
@@ -146,7 +148,7 @@ export default function IndexSaas() {
                 channel="youtube"
                 youtube={{ mute: 0, autoplay: 0 }}
                 isOpen={isOpen}
-                videoId="yba7hPeTSjk"
+                videoId="y9mB8RZxwwQ"
                 onClose={() => setOpen(false)}
               />
 
@@ -377,7 +379,7 @@ export default function IndexSaas() {
             <div className="col-lg-6 col-md-5">
               <div className="app-feature-shape-left position-relative">
                 <div className="text-center text-md-start">
-                  <img src={Lab} className="img-fluid" alt="" />
+                  <img src={Lab} className="img-fluid shimmer-effects " alt="" />
                 </div>
               </div>
             </div>
@@ -398,13 +400,13 @@ export default function IndexSaas() {
                   today!”
                 </p>
                 <ul className="list-unstyled text-muted">
-                  <li className="mb-1">
+                  <li className="mb-1 ms-1">
                     <span className="text-primary h5 me-2">
                       <AiOutlineCheckCircle className="align-middle" />
                     </span>
                     ORAL TEST
                   </li>
-                  <li className="mb-1">
+                  <li className="mb-1  me-5">
                     <span className="text-primary h5 me-2">
                       <AiOutlineCheckCircle className="align-middle" />
                     </span>
@@ -466,7 +468,6 @@ export default function IndexSaas() {
           </div>
         </div>
 {/* End Of Accountend Section*/}
-
       </section>
 
       <section className="" id="pricing">
@@ -514,7 +515,7 @@ export default function IndexSaas() {
                           Start Now
                         </Link>
                       ) : (
-                        <Link to="#" className="btn btn-primary">
+                        <Link to="#" className="btn btn-primary shimmer-effect">
                           Start Now
                         </Link>
                       )}
@@ -590,6 +591,8 @@ export default function IndexSaas() {
       </section>
       
       <Footer />
+      <Call />
+      <Whatsup />
       <ScrollTop />
       </Container>
     </>
@@ -607,7 +610,7 @@ const Container = styled.div`
 }
 
 .shimmer-effect {
-  animation: shimmer 8s linear infinite;
+  animation: shimmer 12s linear infinite;
   background: linear-gradient(to right, #2a52c3 0%, #6a89cc 20%, #2a52c3 40%, #2a52c3 100%);
   background-size: 200% 100%;
 }

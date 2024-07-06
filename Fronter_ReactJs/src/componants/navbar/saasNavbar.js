@@ -44,15 +44,9 @@ export default function SaasNavbar() {
         <div className="container">
           <Link className="logo" to="/">
             <span className="logo-light-mode">
-              <h3 style={{color:"#E12454"}}>DentalGuru</h3>
+            <img src="/dental3.webp" alt="Description of the image" style={{height:"80px"}}/>
+              {/* <h3 style={{color:"#E12454"}}>DentalGuru</h3> */}
             </span>
-            {/* <span className="logo-light-mode">
-              <img src={logoDark} className="l-dark" alt="" />
-              <img src={logoWhite} className="l-light" alt="" />
-
-            
-            </span>
-            <img src={logoWhite} className="logo-dark-mode" alt="" /> */}
           </Link>
 
           <div className="menu-extras">
@@ -101,21 +95,6 @@ export default function SaasNavbar() {
                   Feature
                 </Link1>
               </li>
-
-              {/* <<<When we Added Testimonial so open this>>> */}
-
-              {/* <li className="has-submenu">
-                <Link1
-                  to="testi"
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="sub-menu-item"
-                >
-                  Testimonial
-                </Link1>
-              </li> */}
               <li className="has-submenu">
                 <Link1
                   to="pricing"

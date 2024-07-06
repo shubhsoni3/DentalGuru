@@ -902,6 +902,23 @@ $value in $colors {
         transition: all 0.5s ease;
     }
 }
+.whatsup-only {
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    transition: all 0.5s ease;
+    height: 60px;
+    width: 60px;
+    line-height: 34px;
+    text-align: center;
+    background: $primary;
+    color: $white !important;
+    .icons {
+        transition: all 0.5s ease;
+    }
+}
 
 //back-to-home
 .back-to-home {

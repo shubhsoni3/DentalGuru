@@ -22,30 +22,6 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-footer">
-      {/* <div className="py-5">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-8">
-                            <div className="section-title">
-                                <div className="d-flex align-items-center">
-                                    <TbMailStar className="display-4 text-white title-dark"/>
-                                    <div className="flex-1 ms-md-4 ms-3">
-                                        <h4 className="fw-bold text-light title-dark mb-1">Subscribe to our newsletters</h4>
-                                        <p className="text-white-50 mb-0">Sign up and receive the latest tips via email.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-4 mt-4 mt-sm-0">
-                            <div className="text-md-end ms-5 ms-sm-0">
-                                <Link to="https://1.envato.market/fronter-react" target="_blank" className="btn btn-primary">Subscribe Now</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -54,7 +30,7 @@ export default function Footer() {
                 <div className="col-lg-4 col-md-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                   <Link to="#" className="logo-footer">
                     {/* <img src={logolight} alt="" /> */}
-                    <h3 className="text-light">Dental Guru</h3>
+                    <img src="/dental3.webp" alt="Description of the image" className="ms-lg-5 ms-md-0" style={{height:"100px"}}/>
                   </Link>
                   <p className="mt-4">
                     Get started with Dental Guru, your all-in-one solution for
@@ -62,33 +38,7 @@ export default function Footer() {
                     and enhancing connections within your dental practice.
                   </p>
                   <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                    {/* <li className="list-inline-item me-1">
-                      <Link
-                        to="https://1.envato.market/fronter-react"
-                        target="_blank"
-                        className="rounded"
-                      >
-                        <AiOutlineShoppingCart className="align-middle" />
-                      </Link>
-                    </li> */}
-                    {/* <li className="list-inline-item me-1">
-                      <Link
-                        to="https://dribbble.com/shreethemes"
-                        target="_blank"
-                        className="rounded"
-                      >
-                        <AiOutlineDribbble />
-                      </Link>
-                    </li> */}
-                    {/* <li className="list-inline-item me-1">
-                      <Link
-                        to="https://www.behance.net/shreethemes"
-                        target="_blank"
-                        className="rounded"
-                      >
-                        <AiOutlineBehance />
-                      </Link>
-                    </li> */}
+                   
                     <li className="list-inline-item me-1">
                       <Link
                         to="https://www.linkedin.com/company/doaguru-info-sys/?original_referer=https%3A%2F%2Fdoaguru.com%2F"
@@ -125,14 +75,6 @@ export default function Footer() {
                         <AiOutlineTwitter />
                       </Link>
                     </li>
-                    {/* <li className="list-inline-item me-1">
-                      <Link
-                        to="mailto:support@shreethemes.in"
-                        className="rounded"
-                      >
-                        <FiMail />
-                      </Link>
-                    </li> */}
                     <li className="list-inline-item me-1">
                       <Link
                         to="https://www.pinterest.com/doaguru/?invite_code=40f3f21e021f41a2a72b30b8dbee9d9b&sender=614530449062265269"
@@ -214,39 +156,8 @@ export default function Footer() {
                         info@doaguru.com
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link to="#" className="text-foot">
-                        <MdOutlineKeyboardArrowRight className="me-1" />{" "}
-                        Components
-                      </Link>
-                    </li> */}
                   </ul>
                 </div>
-
-                {/* <div className="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                  <h5 className="footer-head">Start project with Fronter</h5>
-
-                  <ul className="list-unstyled footer-list mt-4 mb-2">
-                    <li className="list-inline-item mx-1">
-                      <Link to="#" className="btn btn-soft-primary">
-                        Signin
-                      </Link>
-                    </li>
-                    <li className="list-inline-item mx-1">
-                      <Link to="#" className="btn btn-primary">
-                        Signup
-                      </Link>
-                    </li>
-                  </ul>
-                  <small className="d-block">
-                    Are you developer ?{" "}
-                    <Link to="#" className="text-foot fw-semibold">
-                      Learn More <MdArrowForward />
-                    </Link>
-                  </small>
-
-                  <img src={logo48} className="mt-4" alt="" />
-                </div> */}
               </div>
             </div>
           </div>
