@@ -18,6 +18,7 @@ import Home from '../src/pages/home.js'
 import PaymentPage from './pages/PaymentPage.js';
 import Contactus from './pages/contact.js';
 import Blog from './componants/blog.js';
+import Blog2 from './componants/blog2.js';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="*" element={<Error />} />
         <Route path="/page-contact-one" element={<ContactOne />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog2" element={<Blog2 />} />
         <Route path="/contectus" element={<Contactus />} />
         <Route path="/Refund" element={<Refund />} />
         <Route path="/Privacy" element={<Privacy />} />
