@@ -106,6 +106,7 @@ const navigate = useNavigate();
       price: "3,999/-",
       finalPrice: "0/-",
       title: "MONTHLY",
+      duration: "30",
       // subTitle: [
       //   "Including 1 Month Maintenance 50% Discount"
       // ],
@@ -118,7 +119,7 @@ const navigate = useNavigate();
         // </div>,
         
         <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                 <div><FaCircleMinus /></div> <div className="text-start ms-2">1 Month SMO</div>
+                 <div><FaCircleMinus /></div> <div className="text-start ms-2">1 Month SMO (Social Media Optimization)</div>
                </div>,
           
         <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -134,11 +135,13 @@ const navigate = useNavigate();
         </div>,
       ],
       status: true,
-      name: "Dentalguru Pro-MONTHLY",
+      name: "Dentalguru Pro",
     },
+
     {
       price: "4,499/-",
       finalPrice: "8,999/-",
+      duration: "90",
       title: "QUARTERLY",
      subTitle: [
                    <div style={{color:"black"}}>
@@ -165,11 +168,13 @@ const navigate = useNavigate();
      </div>,
                  ],
       status: true,
-      name: "Dentalguru Pro-QUARTERLY",
+      name: "Dentalguru Pro",
     },
+
     {
       price: "7,199/-",
       finalPrice: "13,399/-",
+      duration: "180",
       title: "HALF YEARLY",
       // subTitle: [
       //   "Including 6 Months Maintenance",
@@ -184,7 +189,7 @@ const navigate = useNavigate();
       </div>,
       
       <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-               <div><FaCheckCircle /></div> <div className="text-start ms-2">1 Month SMO</div>
+               <div><FaCheckCircle /></div> <div className="text-start ms-2">1 Month SMO (Social Media Optimization)</div>
              </div>,
         
       <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -200,11 +205,13 @@ const navigate = useNavigate();
       </div>,
             ],
       status: true,
-      name: "Dentalguru Pro-HALF YEARLY",
+      name: "Dentalguru Pro",
     },
+
     {
       price: "11,999/-",
       finalPrice: "23,999/-",
+      duration: "365",
       title: "YEARLY PLAN",
       // subTitle: [
       //   "Including 1 Year Maintenance",
@@ -219,28 +226,33 @@ const navigate = useNavigate();
                       </div>,
               
                       <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                               <div><FaCheckCircle /></div> <div className="text-start ms-2">1 Month SMO</div>
+                               <div><FaCheckCircle /></div> <div className="text-start ms-2">1 Month SMO (Social Media Optimization)</div>
                              </div>,
-                        
-                      <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                        <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">2-Page React Website for Appointments (Includes 1 Year of Free Maintenance).</div>
-                      </div>,  
+                             <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                             <div><FaCheckCircle /></div> <div className="text-start ms-2">3 Months SEO (Search Engine Optimization)</div>
+                           </div>,  
       
                       <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
                        <div className="mt-2"><FaCircleMinus /></div> <div className="text-start ms-2">1 Premium Video (Exclusive to Lifetime Plan).</div>
                       </div>,
       
+      <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+      <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">2-Page React Website for Appointments (Includes 1 Year of Free Maintenance).</div>
+    </div>,
+
                      <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
                        <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">Lifetime Referral Bonus – Earn Rewards for Every Referral!</div>
                      </div>,
                   ],
       status: true,
-      name: "Dentalguru Pro-YEARLY PLAN",
+      name: "Dentalguru Pro",
     },
+
     {
       price: "49,999/-",
       finalPrice: "99,999/-",
-      title: "For 5 Years",
+      duration: "1825",
+      title: "FOR 5 YEARS",
       // subTitle: [
       //   "One year AMC free for DentalGuru Pro",
       //   "50% Discount + 5 Pages React Website + 2 Months SMO + 1 Premium Video",
@@ -254,13 +266,18 @@ const navigate = useNavigate();
                    <div><FaCheckCircle /></div> <div className="text-start ms-2">Flat 50% Discount – Save BIG Today!</div>
                  </div>,
           
-          <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                   <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website Designed to Impress Your Patients</div>
-                 </div>,
-          
   <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-  <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">2 Months of SMO + 1 Premium Videos to Skyrocket Your Brand</div>
+  <div><FaCheckCircle /></div> <div className="text-start ms-2">2 Months SMO (Social Media Optimization)</div>
   </div>,
+  <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+  <div><FaCheckCircle /></div> <div className="text-start ms-2">6 Months SEO (Search Engine Optimization)</div>
+  </div>,
+  <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+  <div className="mt-1"><FaCheckCircle /></div> <div className="text-start ms-2">1 Premium Videos to Skyrocket Your Brand</div>
+  </div>,
+              <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+              <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website Designed to Impress Your Patients</div>
+            </div>,
   <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
   <div className="mt-4"><FaCheckCircle /></div> <div className="text-start ms-2">1 Year Maintenance Absolutely FREE – No Extra Costs for 12 Months!
     <br/>AMC of Just ₹2399/- Starting from the 2nd Year</div>
@@ -270,13 +287,14 @@ const navigate = useNavigate();
 </div>,
       ],
       status: true,
-      name: "Dentalguru Pro-For 5 Years",
+      name: "Dentalguru Pro",
     },
 
     {
       price: "79,999/-",
+      duration: "5000",
       finalPrice: "1,99,999/-",
-      title: "Lifetime",
+      title: "LIFETIME",
      
             subTitle: [
                     <div style={{color:"black", textAlign:"start"}}>
@@ -286,13 +304,18 @@ const navigate = useNavigate();
                                <div><FaCheckCircle /></div> <div className="text-start ms-2">Flat 50% Discount – Save BIG Today!</div>
                              </div>,  
                       
-                      <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                               <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website Designed to Impress Your Patients</div>
-                             </div>,
-                      
               <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-              <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">6 Months of SMO & SMM + 1 Premium Videos to Skyrocket Your Brand</div>
+              <div ><FaCheckCircle /></div> <div className="text-start ms-2">6 Months SMO (Social Media Optimization)</div>
               </div>,
+              <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+              <div ><FaCheckCircle /></div> <div className="text-start ms-2">6 Months SMM (Social Media Marketing)</div>
+              </div>,
+              <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+              <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">1 Premium Videos to Skyrocket Your Brand</div>
+              </div>,
+                                    <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                                    <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website Designed to Impress Your Patients</div>
+                                  </div>,
             <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
             <div className="mt-4"><FaCheckCircle /></div> <div className="text-start ms-2">1 Year Maintenance Absolutely FREE – No Extra Costs for 12 Months!
               <br/>AMC of Just ₹2399/- Starting from the 2nd Year</div>
@@ -302,7 +325,7 @@ const navigate = useNavigate();
           </div>,
                   ],
       status: true,
-      name: "Dentalguru Lifetime",
+      name: "Dentalguru Pro",
     },
   ];
 

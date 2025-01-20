@@ -6,7 +6,7 @@ import styled from "styled-components";
 const PaymentPage = () => {
   const location = useLocation();
   const { cart, total } = location.state || { cart: [], total: 0 };
-
+  console.log("Cart Data:", cart);
   const perGST = (total * 18) / 100;
   const totalAmount = parseFloat(total) + parseFloat(perGST);
   const ninePerGst = perGST / 2;
@@ -16,6 +16,7 @@ const PaymentPage = () => {
     name: "",
     email: "",
     contact: "",
+    addresh: "",
   });
   const [paymentStatus, setPaymentStatus] = useState(null);
   const [orderId, setOrderId] = useState("");
@@ -37,7 +38,7 @@ const PaymentPage = () => {
   const makePayment = async (e) => {
     e.preventDefault();
     try {
-      if (!userDetails.name || !userDetails.email || !userDetails.contact) {
+      if (!userDetails.name || !userDetails.email || !userDetails.contact || !userDetails.addresh) {
         alert("Please fill in all the details to proceed with the payment.");
         return;
       }
@@ -67,7 +68,9 @@ const PaymentPage = () => {
             signature: response.razorpay_signature,
             userDetails,
             productName: cart.map((item) => item.name).join(", "),
-            amount: amountInRoundFigure,
+            plan_name: cart.map((item) => item.title).join(", "),
+            duration: cart.map((item) => item.duration).join(", "),
+            amount: amountInRoundFigure,  
           };
 
           try {
@@ -91,6 +94,7 @@ const PaymentPage = () => {
           name: userDetails.name,
           email: userDetails.email,
           contact: userDetails.contact,
+          addresh: userDetails.addresh,
         },
         theme: {
           color: "#3399cc",
@@ -200,6 +204,21 @@ const PaymentPage = () => {
                       required
                     />
                   </div>
+                  <div className="mb-3">
+                    <label htmlFor="addresh" className="form-label">
+                      Addresh  
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="addresh"
+                      name="addresh"
+                      value={userDetails.addresh}
+                      onChange={handleInputChange}
+                      placeholder="Type your address"
+                      required
+                    />
+                  </div>
 
                   <div className="mt-2">
                     <h5>Order Summary</h5>
@@ -211,6 +230,10 @@ const PaymentPage = () => {
                         >
                           <div>
                             {item.name}
+                            <br/>
+                            {item.title}
+                            <br/>
+                            {item.duration} Days
                             <div>
                               <span
                                 style={{

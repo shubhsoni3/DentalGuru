@@ -99,16 +99,18 @@ export default function MiniDentalguru() {
   ];
 
   const plan = [
+
     {
       price: "1999/-",
       finalPrice: "0/-",
       title: "MONTHLY",
+      duration: "30",
       subTitle: [
         <div style={{color:"black"}}>
         Monthly plan with maintenance and features tailored for dental professionals.</div>,
 
 <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-         <div><FaCircleMinus /></div> <div className="text-start ms-2">15 Days of SMO (5 Posts + 2 Reels) Included!</div>
+         <div><FaCircleMinus /></div> <div className="text-start ms-2">15 Days of SMO (Social Media Optimization)</div>
        </div>,
   
 <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -124,12 +126,14 @@ export default function MiniDentalguru() {
 </div>,
       ],
       status: true,
-      name:"Dentalguru Lite-MONTHLY", 
+      name:"Dentalguru Lite", 
     },
+
     {
       price: "2,249/-",
       finalPrice: "4,499/-",
       title: "QUATERLY",
+      duration: "90",
       subTitle: [
         <div style={{color:"black"}}>
         3-month plan offering discounts and additional features for extended service.</div>,
@@ -139,7 +143,7 @@ export default function MiniDentalguru() {
 </div>,
 
 <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-         <div><FaCircleMinus /></div> <div className="text-start ms-2">15 Days of SMO (5 Posts + 2 Reels) Included!</div>
+         <div><FaCircleMinus /></div> <div className="text-start ms-2">15 Days of SMO (Social Media Optimization)</div>
        </div>,
   
 <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -155,12 +159,14 @@ export default function MiniDentalguru() {
 </div>,
       ],
       status: true,
-      name:"Dentalguru Lite-QUATERLY",
+      name:"Dentalguru Lite",
     },
+
     {
       price: "3,599/-",
       finalPrice: "7,199/-",
       title: "HALF YEARLY",
+      duration: "180",
       subTitle: [
               <div style={{color:"black"}}>
               Half-yearly plan with additional perks and a discount for longer duration.</div>,
@@ -170,7 +176,7 @@ export default function MiniDentalguru() {
 </div>,
 
 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-         <div><FaCheckCircle /></div> <div className="text-start ms-2">15 Days of SMO (5 Posts + 2 Reels) Included!</div>
+         <div><FaCheckCircle /></div> <div className="text-start ms-2">15 Days of SMO (Social Media Optimization)</div>
        </div>,
   
 <div style={{ color: "#8492A6", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -186,12 +192,14 @@ export default function MiniDentalguru() {
 </div>,
             ],
       status: true,
-      name:"Dentalguru Lite-HALF YEARLY",
+      name:"Dentalguru Lite",
     },
+
     {
-      price: "5,999/-",
+      price: "1/-",
       finalPrice: "11,999/-",
       title: "YEARLY PLAN",
+      duration: "365",
             subTitle: [
               <div style={{color:"black", textAlign:"start"}}>
               Yearly plan with the most comprehensive benefits and exclusive offers.</div>,
@@ -201,11 +209,14 @@ export default function MiniDentalguru() {
                 </div>,
         
                 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                         <div><FaCheckCircle /></div> <div className="text-start ms-2">15 Days of SMO (5 Posts + 2 Reels) Included!</div>
+                         <div><FaCheckCircle /></div> <div className="text-start ms-2">3 Month SEO (Search Engine Optimization)</div>
                        </div>,
+                                       <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                                       <div><FaCheckCircle /></div> <div className="text-start ms-2">15 Days SMO (Social Media Optimization)</div>
+                                     </div>,
                   
                 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                  <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">2-Page React Website for Appointments (Includes 1 Year of Free Maintenance).</div>
+                  <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">2-Page React Website for Appointments (Includes 1 Year of Free Maintenance).</div>
                 </div>,  
 
                 <div style={{ color: "FaCircleMinus", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -217,12 +228,14 @@ export default function MiniDentalguru() {
                </div>,
             ],
       status: true,
-      name:"Dentalguru Lite-YEARLY PLAN", 
+      name:"Dentalguru Lite", 
     },
+
     {
       price: "24,999/-",
       finalPrice: "49,999/-",
-      title: "For 5 Years",
+      title: "FOR 5 YEARS",
+      duration: "1825",
       subTitle: [
         <div style={{color:"black", textAlign:"start"}}>
         5-year plan for long-term dental practice needs with a lifetime referral bonus.</div>,
@@ -231,13 +244,21 @@ export default function MiniDentalguru() {
           <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">Flat 50% Discount on Your Subscription!</div>
           </div>,
 
+<div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+<div><FaCheckCircle /></div> <div className="text-start ms-2">6 Month SEO (Search Engine Optimization)</div>
+</div>,
+        <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+        <div><FaCheckCircle /></div> <div className="text-start ms-2">1 Months SMO (Social Media Optimization)</div>
+      </div>,
+
             <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
             <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">1 Premium Video to Elevate Your Brand!</div>
             </div>,  
           
           <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                   <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website for Appointment Booking + 1 Months of SMO Included!</div>
+                   <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website for Appointment Booking (Includes 1 Year of Free Maintenance)</div>
                  </div>,
+
           
   <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
   <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">Get 1 Year AMC Absolutely Free! 
@@ -248,31 +269,36 @@ export default function MiniDentalguru() {
 </div>,
       ],
       status: true,
-      name:"Dentalguru Lite-For 5 Years",
+      name:"Dentalguru Lite",
     },
 
     {
       price: "39,999/-",
       finalPrice: "99,999/-",
-      title: "Lifetime",
+      title: "LIFETIME",
+      duration: "5000",
       subTitle: [
               <div style={{color:"black", textAlign:"start"}}>
               Lifetime plan with all-inclusive benefits for an extended period.</div>,
 
                 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
                 <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">Flat 50% Discount on Your Subscription!</div>
-                </div>,
-                  
-                  <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                  <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">1 Premium Video to Elevate Your Brand!</div>
-                  </div>,  
-                
+                </div>,              
                 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-                         <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website for Appointment Booking + 3 Months of SMM & SMO Included!</div>
+                         <div><FaCheckCircle /></div> <div className="text-start ms-2">3 Months SMM (Social Media Marketing)</div>
                        </div>,
+                       <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                       <div><FaCheckCircle /></div> <div className="text-start ms-2">3 Months SMO (Social Media Optimization)</div>
+                     </div>,
+                                       <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                                       <div className="mt-1"><FaCheckCircle /></div> <div className="text-start ms-2">1 Premium Video to Elevate Your Brand!</div>
+                                       </div>, 
+                     <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
+                     <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">5-Page React Website for Appointment Booking (Includes 1 Year of Free Maintenance)</div>
+                   </div>,
                 
         <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
-        <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">Get 1 Year AMC Absolutely Free!
+        <div className="mt-3"><FaCheckCircle /></div> <div className="text-start ms-2">Get 1 Year AMC Absolutely Free!
           <br/>AMC of ₹1199/- Applicable from the 2nd Year!</div>
         </div>,
         <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
@@ -280,8 +306,9 @@ export default function MiniDentalguru() {
       </div>,
             ],         
       status: true,
-      name:"Dentalguru Lite-Lifetime",
+      name:"Dentalguru Lite",
     },
+    
   ];
  
 
