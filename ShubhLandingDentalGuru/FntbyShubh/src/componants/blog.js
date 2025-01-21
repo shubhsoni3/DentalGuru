@@ -27,9 +27,11 @@ const Blog = () => {
           <p className="lead animate_animated animate_fadeInUp">
             Streamline operations and enhance patient care with DentalGuru.
           </p>
+          <Link to="https://dentalguru.software/Best-Dental-Practice-Management-Software">
           <button className="btn btn-light btn-lg mt-3 animate_animated animate_zoomIn">
             Learn More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -171,6 +173,33 @@ const Blog = () => {
                   Enhanced Communication Tools
                 </li>
                 <li className="list-group-item">Powerful Reporting Features</li>
+              </ul>
+            </div>
+            <div className="p-4 bg-light rounded shadow-sm">
+              <h3 className="fw-bold">More Blogs: </h3>
+              {/* <p>
+                DentalGuru isn’t just software; it’s a comprehensive solution
+                designed to transform the way you manage your dental practice.
+                Here’s why it’s the right choice for your clinic:
+              </p> */}
+              <ul className="list-group list-group-flush mt-3">
+                <Link to="/blog2">
+                <li className="list-group-item">
+                   How DentalGuru Can Simplify Your Day-to-Day Dental Practice Management
+                </li>
+                </Link>
+                {/* <li className="list-group-item">
+                  Data Security: Robust measures to protect sensitive patient
+                  information.
+                </li> */}
+                {/* <li className="list-group-item">
+                  Scalability: Ideal for clinics of all sizes, from startups to
+                  established practices.
+                </li> */}
+                {/* <li className="list-group-item">
+                  Enhanced Communication Tools
+                </li>
+                <li className="list-group-item">Powerful Reporting Features</li> */}
               </ul>
             </div>
 

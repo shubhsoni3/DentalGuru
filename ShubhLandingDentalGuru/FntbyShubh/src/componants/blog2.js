@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Helmet } from "react-helmet";
+import blog2 from "../assets/images/blog/blog2.png"
 
 const Blog2 = () => {
   const [selected, setSelected] = useState(null);
@@ -11,18 +12,21 @@ const Blog2 = () => {
   };
   return (
     <div>
-          <Helmet>
-                   <title>How DentalGuru Simplifies Dental Practice Management | Best Software for Dentists.</title>
-                   <link
-                     rel="canonical"
-                    //  href="https://dentalguru.software/Best-Dental-Practice-Management-Software"
-                    href="https://dentalguru.software/how-dentalGuru-simplifies-dental-practice-management/Best-Software-for-Dentists"
-                   />
-                   <meta
-                     name="description"
-                     content="Discover how DentalGuru, the best dental management software, streamlines patient scheduling, billing, and treatment planning. Perfect for dentists looking to enhance efficiency and patient care."
-                   />
-                 </Helmet>
+      <Helmet>
+        <title>
+          How DentalGuru Simplifies Dental Practice Management | Best Software
+          for Dentists.
+        </title>
+        <link
+          rel="canonical"
+          //  href="https://dentalguru.software/Best-Dental-Practice-Management-Software"
+          href="https://dentalguru.software/how-dentalGuru-simplifies-dental-practice-management/Best-Software-for-Dentists"
+        />
+        <meta
+          name="description"
+          content="Discover how DentalGuru, the best dental management software, streamlines patient scheduling, billing, and treatment planning. Perfect for dentists looking to enhance efficiency and patient care."
+        />
+      </Helmet>
       {/* Hero Section */}
       <div
         className="bg-primary text-white text-center py-5 position-relative"
@@ -42,26 +46,31 @@ const Blog2 = () => {
           {/* <p className="lead animate_animated animate_fadeInUp">
             Streamline operations and enhance patient care with DentalGuru.
           </p> */}
-          <button className="btn btn-light btn-lg mt-3 animate_animated animate_zoomIn">
-            Learn More
-          </button>
+          <Link to="https://dentalguru.software/Best-Dental-Practice-Management-Software">
+            <button className="btn btn-light btn-lg mt-3 animate_animated animate_zoomIn">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
 
       <div className="container py-5">
-        {/* <section className="row mb-5">
-  <div className="col-12">
-    <img
-      src="/image.png"
-      alt="Descriptive text"
-      className="img-fluid w-100"
-      style={{
-        height: "800px",
-        objectFit: "cover", 
-      }}
-    />
-  </div>
-</section> */}
+        <section className="row mb-5">
+        <div className="col-12" style={{ position: "relative", paddingBottom: "56.25%" }}>
+  <img
+    src={blog2}
+    alt="Descriptive text"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      objectFit: "contain", // Keeps the full image visible
+    }}
+  />
+</div>
+</section>
         <section className="row mb-5">
           <div className="col-lg-8">
             <article>
@@ -81,18 +90,16 @@ const Blog2 = () => {
                 accurate records to ensuring timely billing and treatment
                 planning, dentists juggle numerous responsibilities daily. These
                 tasks can be overwhelming and time-consuming, especially when
-                relying on manual processes. That’s where DentalGuru steps in to
-                revolutionize your dental practice management.
+                relying on manual processes. That’s where{" "}
+                <Link to="https://dentalguru.software/">DentalGuru</Link> steps
+                in to revolutionize your dental practice management.
               </p>
               <br />
               <p>
-                Managing a dental practice comes with its unique set of
-                challenges. From handling patient appointments and maintaining
-                accurate records to ensuring timely billing and treatment
-                planning, dentists juggle numerous responsibilities daily. These
-                tasks can be overwhelming and time-consuming, especially when
-                relying on manual processes. That’s where DentalGuru steps in to
-                revolutionize your dental practice management.
+                As one of the best dental management software options available,
+                DentalGuru is designed to simplify your clinic’s operations,
+                enhance efficiency, and improve patient care. Let’s explore how
+                DentalGuru makes it possible.
               </p>
               {/* <ul className="list-group list-group-flush">
                 <li className="list-group-item">
@@ -117,15 +124,15 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Offering a user-friendly calendar for booking, rescheduling,
-                  and canceling appointments.
+                  Offering a user-friendly calendar for booking, rescheduling,
+                    and canceling appointments.
                 </li>
                 <li className="list-group-item">
-                  ● Sending automated reminders to patients to reduce no-shows.
+                  Sending automated reminders to patients to reduce no-shows.
                 </li>
                 <li className="list-group-item">
-                  ● Allowing seamless integration with your clinic’s workflow to
-                  avoid double bookings.
+                  Allowing seamless integration with your clinic’s workflow to
+                    avoid double bookings.
                 </li>
               </ul>
               <br />
@@ -146,12 +153,12 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Providing a secure platform to store and access patient
-                  details, medical history, and treatment plans.
+                  Providing a secure platform to store and access patient
+                    details, medical history, and treatment plans.
                 </li>
                 <li className="list-group-item">
-                  ● Enabling quick updates to patient information with just a
-                  few clicks.
+                  Enabling quick updates to patient information with just a
+                    few clicks.
                 </li>
                 {/* <li className="list-group-item">
                   Track outstanding payments and send reminders.
@@ -173,13 +180,13 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Automatically generating detailed invoices for treatments.
+                Automatically generating detailed invoices for treatments.
                 </li>
                 <li className="list-group-item">
-                  ● Tracking payments and sending reminders for overdue bills.
+                Tracking payments and sending reminders for overdue bills.
                 </li>
                 <li className="list-group-item">
-                  ● Simplifying the financial management of your practice.
+                Simplifying the financial management of your practice.
                 </li>
               </ul>
               <br />
@@ -197,15 +204,15 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Create customized treatment plans tailored to each patient’s
+                  Create customized treatment plans tailored to each patient’s
                   needs.
                 </li>
                 <li className="list-group-item">
-                  ● Track the progress of ongoing treatments.
+                  Track the progress of ongoing treatments.
                 </li>
                 <li className="list-group-item">
-                  ● Ensure clear communication with patients regarding their
-                  treatment plans and costs.
+                  Ensure clear communication with patients regarding their
+                     treatment plans and costs.
                 </li>
               </ul>
               <br />
@@ -224,15 +231,15 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Monitor key performance indicators (KPIs) like patient
-                  retention and revenue.
+                  Monitor key performance indicators (KPIs) like patient
+                     retention and revenue.
                 </li>
                 <li className="list-group-item">
-                  ● Identify areas for improvement in your practice.
+                  Identify areas for improvement in your practice.
                 </li>
                 <li className="list-group-item">
-                  ● Make data-driven decisions to enhance efficiency and
-                  profitability.
+                  Make data-driven decisions to enhance efficiency and
+                     profitability.
                 </li>
               </ul>
               <br />
@@ -266,11 +273,11 @@ const Blog2 = () => {
               </p>
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  ● Keep patients informed about their appointments and
-                  treatment progress.
+                  Keep patients informed about their appointments and
+                     treatment progress.
                 </li>
                 <li className="list-group-item">
-                  ● Send personalized messages to improve engagement.
+                  Send personalized messages to improve engagement.
                 </li>
                 {/* <li className="list-group-item">
                   ● Make data-driven decisions to enhance efficiency and

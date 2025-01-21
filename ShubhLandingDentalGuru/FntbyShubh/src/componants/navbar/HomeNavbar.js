@@ -90,11 +90,11 @@ export default function SaasNavbar() {
                   blog
                 </Link>
               </li>
-              <li className="has-submenu">
-                <Link to="/blog2">
+              {/* <li className="has-submenu">
+                <Link to="">
                   blog2
                 </Link>
-              </li>
+              </li> */}
               
               <li className="has-submenu">
                 <Link to="/page-contact-one">Demo</Link>
