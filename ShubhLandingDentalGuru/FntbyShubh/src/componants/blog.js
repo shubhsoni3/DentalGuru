@@ -188,10 +188,11 @@ const Blog = () => {
                    How DentalGuru Can Simplify Your Day-to-Day Dental Practice Management
                 </li>
                 </Link>
-                {/* <li className="list-group-item">
-                  Data Security: Robust measures to protect sensitive patient
-                  information.
-                </li> */}
+                <Link to="/blog3">
+                <li className="list-group-item">
+                 How Practice Management Software Reduces Stress for Dentists
+                </li>
+                </Link>
                 {/* <li className="list-group-item">
                   Scalability: Ideal for clinics of all sizes, from startups to
                   established practices.
