@@ -86,7 +86,7 @@ export default function SaasNavbar() {
               </li>
 
               <li className="has-submenu">
-                <Link to="/blog">
+                <Link to="/Simplify-Your-Dental-Clinic-Management">
                   blog
                 </Link>
               </li>

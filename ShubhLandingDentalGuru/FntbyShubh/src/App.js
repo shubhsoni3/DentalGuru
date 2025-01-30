@@ -33,9 +33,9 @@ function App() {
         <Route path="/page-error" element={<Error />} />
         <Route path="*" element={<Error />} />
         <Route path="/page-contact-one" element={<ContactOne />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog2" element={<Blog2 />} />
-        <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/Simplify-Your-Dental-Clinic-Management" element={<Blog />} />
+        <Route path="/Best-Software-for-Dentists" element={<Blog2 />} />
+        <Route path="/How-Practice-Management-Software-Like-DentalGuru-Reduces-Stress-for-Dentists." element={<Blog3 />} />
         <Route path="/contectus" element={<Contactus />} />
         <Route path="/Refund" element={<Refund />} />
         <Route path="/Privacy" element={<Privacy />} />

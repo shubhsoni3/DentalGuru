@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const [selected, setSelected] = useState(null);
@@ -10,6 +11,20 @@ const Blog = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>
+        Simplify Your Dental Clinic Management
+        </title>
+        <link
+          rel="canonical"
+          //  href="https://dentalguru.software/Best-Dental-Practice-Management-Software"
+          href="https://dentalguru.software/Simplify-Your-Dental-Clinic-Management"
+        />
+        <meta
+          name="description"
+          content="Discover how DentalGuru simplifies operations, automates billing, enhances communication & boosts efficiency. Reduce stress & focus on patient care!"
+        />
+      </Helmet>
       {/* Hero Section */}
       <div
         className="bg-primary text-white text-center py-5 position-relative"
@@ -183,12 +198,12 @@ const Blog = () => {
                 Here’s why it’s the right choice for your clinic:
               </p> */}
               <ul className="list-group list-group-flush mt-3">
-                <Link to="/blog2">
+                <Link to="/Best-Software-for-Dentists">
                 <li className="list-group-item">
                    How DentalGuru Can Simplify Your Day-to-Day Dental Practice Management
                 </li>
                 </Link>
-                <Link to="/blog3">
+                <Link to="/How-Practice-Management-Software-Like-DentalGuru-Reduces-Stress-for-Dentists.">
                 <li className="list-group-item">
                  How Practice Management Software Reduces Stress for Dentists
                 </li>

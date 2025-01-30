@@ -196,7 +196,7 @@ export default function MiniDentalguru() {
     },
 
     {
-      price: "1/-",
+      price: "5,999/-",
       finalPrice: "11,999/-",
       title: "YEARLY PLAN",
       duration: "365",
