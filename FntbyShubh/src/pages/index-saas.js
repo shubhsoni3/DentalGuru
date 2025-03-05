@@ -280,7 +280,7 @@ const navigate = useNavigate();
             </div>,
   <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
   <div className="mt-4"><FaCheckCircle /></div> <div className="text-start ms-2">1 Year Maintenance Absolutely FREE – No Extra Costs for 12 Months!
-    <br/>AMC of Just ₹2399/- Starting from the 2nd Year</div>
+    <br/>AMC at just ₹2400/- per branch, starting from the second year.</div>
   </div>,
 <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
 <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">Lifetime Referral Bonus – Earn Unlimited Rewards Forever!</div>
@@ -318,7 +318,7 @@ const navigate = useNavigate();
                                   </div>,
             <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
             <div className="mt-4"><FaCheckCircle /></div> <div className="text-start ms-2">1 Year Maintenance Absolutely FREE – No Extra Costs for 12 Months!
-              <br/>AMC of Just ₹2399/- Starting from the 2nd Year</div>
+              <br/>AMC at just ₹2400/- per branch, starting from the second year.</div>
             </div>,
             <div style={{ color: "#008000", fontSize: "1rem", display:"flex", fontWeight:"200"}}>
             <div className="mt-2"><FaCheckCircle /></div> <div className="text-start ms-2">Lifetime Referral Bonus – Earn Unlimited Rewards Forever!</div>
